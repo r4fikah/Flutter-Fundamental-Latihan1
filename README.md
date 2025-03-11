@@ -2,6 +2,7 @@
 
 A new Flutter project.
 !['Screenshoot Hello World](images/1.png)
+!['Screenshoot Hello World](images/2.png)
 
 ## Getting Started
 
