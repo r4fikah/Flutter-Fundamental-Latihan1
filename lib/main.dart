@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/loading_cupertino.dart';
+import 'basic_widgets/floating_button.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const LoadingCupertino(),
+            const FloatingButton(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
