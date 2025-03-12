@@ -10,6 +10,7 @@ PRAKTIKUM 5
 !['Screenshoot Hello World](images/4.png)
 !['Screenshoot Hello World](images/5.png)
 !['Screenshoot Hello World](images/6.png)
+!['GIF Hello World](images/dialog_widget_rafikah.gif)
 
 
 ## Getting Started

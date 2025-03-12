@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/scaffold_widget.dart';
-
+import 'package:hello_world/basic_widgets/dialog_widget.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -91,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors0 stay the same.
-      backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.lightBlueAccent,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -115,10 +114,17 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const HomeScreen(title: 'My Increment App',),
+            const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                showAlertDialog(context); // ✅ Panggil dialog dari dialog_widget.dart
+              },
+              child: const Text('Show Alert'),
             ),
           ],
         ),
@@ -127,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
