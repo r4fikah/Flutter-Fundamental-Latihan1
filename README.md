@@ -9,6 +9,7 @@ PRAKTIKUM 4
 PRAKTIKUM 5
 !['Screenshoot Hello World](images/4.png)
 !['Screenshoot Hello World](images/5.png)
+!['Screenshoot Hello World](images/6.png)
 
 
 ## Getting Started

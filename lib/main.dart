@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/floating_button.dart';
+import 'package:hello_world/basic_widgets/scaffold_widget.dart';
+
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -89,8 +90,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        // change color while the other colors0 stay the same.
+      backgroundColor: Colors.lightBlueAccent,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -114,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const FloatingButton(),
+            const HomeScreen(title: 'My Increment App',),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
