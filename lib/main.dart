@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/text_widget.dart';
+import 'basic_widgets/loading_cupertino.dart';
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
 
 void main() {
   runApp(const MyApp());
@@ -105,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyTextWidget(),
+            const LoadingCupertino(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,

@@ -6,6 +6,8 @@ PRAKTIKUM 3 (Nama sudah Dirubah)
 PRAKTIKUM 4
 !['Screenshoot Hello World](images/2.png)
 !['Screenshoot Hello World](images/3.png)
+PRAKTIKUM 5
+!['Screenshoot Hello World](images/4.png)
 
 
 ## Getting Started
