@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/dialog_widget.dart';
+import 'package:hello_world/basic_widgets/dialog_widget.dart' show showAlertDialog;
+import 'package:hello_world/basic_widgets/text_field.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -90,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors0 stay the same.
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.pink,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -120,11 +121,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 20),
+            const TextFieldWidget(label : 'Nama'),
+              const SizedBox(height: 3),
+            const TextFieldWidget(label : 'NIM'),
+              const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                showAlertDialog(context); // ✅ Panggil dialog dari dialog_widget.dart
+                showAlertDialog(
+                  context,
+                ); 
               },
               child: const Text('Show Alert'),
+              
             ),
           ],
         ),

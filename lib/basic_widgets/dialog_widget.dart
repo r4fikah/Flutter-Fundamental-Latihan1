@@ -11,8 +11,8 @@ void showAlertDialog(BuildContext context) {
 
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
-    title: const Text("Rafikah"),
-    content: const Text("This is my message."),
+    title: const Text("Message"),
+    content: const Text("Halo, Kamu Berhasil Menggunakan Dialog Widget!"),
     actions: [
       okButton,
     ],
