@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/basic_widgets/dialog_widget.dart' show showAlertDialog;
 import 'package:hello_world/basic_widgets/text_field.dart';
+import 'package:hello_world/basic_widgets/date_time_picker.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -125,6 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 3),
             const TextFieldWidget(label : 'NIM'),
               const SizedBox(height: 20),
+              const DateTimePickerWidget(),
             ElevatedButton(
               onPressed: () {
                 showAlertDialog(

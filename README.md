@@ -13,7 +13,12 @@ PRAKTIKUM 5
 !['GIF Hello World](images/dialog_widget_rafikah.gif)
 
 INPUT & SELECTION WIDGET (Text Field) Sudah di modify
+
 !['GIF Hello World'](images/modify_textfield.gif)
+
+DATE & TIME PICKER (Sudah di Modify)
+
+!['GIF Hello World'](images/date_time_picker_new.gif)
 
 
 
