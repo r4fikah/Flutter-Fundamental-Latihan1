@@ -13,7 +13,7 @@ PRAKTIKUM 5
 !['GIF Hello World](images/dialog_widget_rafikah.gif)
 
 INPUT & SELECTION WIDGET (Text Field) Sudah di modify
-!['Video Hello World'](images/modify_textfield.mp4)
+!['GIF Hello World'](images/modify_textfield.gif)
 
 
 
