@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widgets/dialog_widget.dart' show showAlertDialog;
-import 'package:hello_world/basic_widgets/text_field.dart';
 import 'package:hello_world/basic_widgets/date_time_picker.dart';
 
 class MyWidget extends StatelessWidget {
@@ -122,16 +120,11 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 20),
-            const TextFieldWidget(label : 'Nama'),
-              const SizedBox(height: 3),
-            const TextFieldWidget(label : 'NIM'),
-              const SizedBox(height: 20),
-              const DateTimePickerWidget(),
+            const DatePickerWidget(), // Gantilah dengan DatePickerWidget jika ingin menggunakan date picker
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                showAlertDialog(
-                  context,
-                ); 
+               
               },
               child: const Text('Show Alert'),
               

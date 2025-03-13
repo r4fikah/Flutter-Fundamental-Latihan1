@@ -1,14 +1,44 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class DateTimePickerWidget extends StatefulWidget {
-  const DateTimePickerWidget({Key? key}) : super(key: key);
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  _DateTimePickerWidgetState createState() => _DateTimePickerWidgetState();
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'Contoh Date Picker',
+      home: MyHomePage(),
+    );
+  }
 }
 
-class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Contoh Date Picker'),
+      ),
+      body: const Center(
+        child: DatePickerWidget(), // Panggil DatePickerWidget
+      ),
+    );
+  }
+}
+
+class DatePickerWidget extends StatefulWidget {
+  const DatePickerWidget({Key? key}) : super(key: key);
+
+  @override
+  _DatePickerWidgetState createState() => _DatePickerWidgetState();
+}
+
+class _DatePickerWidgetState extends State<DatePickerWidget> {
   DateTime selectedDate = DateTime.now();
 
   Future<void> _selectDate(BuildContext context) async {
@@ -18,7 +48,6 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
       firstDate: DateTime(2015, 8),
       lastDate: DateTime(2101),
     );
-
     if (picked != null && picked != selectedDate) {
       setState(() {
         selectedDate = picked;
@@ -29,16 +58,14 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Text(
-          "${selectedDate.day}-${selectedDate.month}-${selectedDate.year}",
-          style: const TextStyle(fontSize: 18),
-        ),
+        Text("${selectedDate.toLocal()}".split(' ')[0]),
         const SizedBox(height: 20.0),
         ElevatedButton(
           onPressed: () {
             _selectDate(context);
+            print("${selectedDate.day}/${selectedDate.month}/${selectedDate.year}");
           },
           child: const Text('Pilih Tanggal'),
         ),
