@@ -1,12 +1,21 @@
 # hello_world
 
+Nama: Rafikah Nadhif Maulidina
+NIM: 230444040025
+Kelas: Manajemen Informatika (04421)
+
 A new Flutter project.
 PRAKTIKUM 3 (Nama sudah Dirubah)
+
 !['Screenshoot Hello World](images/1.png)
+
 PRAKTIKUM 4
+
 !['Screenshoot Hello World](images/2.png)
 !['Screenshoot Hello World](images/3.png)
+
 PRAKTIKUM 5
+
 !['Screenshoot Hello World](images/4.png)
 !['Screenshoot Hello World](images/5.png)
 !['Screenshoot Hello World](images/6.png)
